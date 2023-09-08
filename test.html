@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Karaoke.js Example</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/karaokejs@1.0.0/dist/karaoke.min.css">
+</head>
+<body>
+  <div id="karaoke"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/karaokejs@1.0.0/dist/karaoke.min.js"></script>
+  <script>
+    // Lời bài hát
+    var lyrics = [
+      [
+        { time: "35.144", text: "Hồn " },
+        { time: "35.587997", text: "lỡ " },
+        { time: "36.006", text: "sa " },
+        { time: "36.475998", text: "vào " },
+        { time: "36.972", text: "đôi " },
+        { time: "37.495", text: "mắt " },
+        { time: "37.939", text: "em" }
+      ],
+      [
+        { time: "42.641", text: "Chiều " },
+        { time: "43.085", text: "nao " },
+        { time: "43.476997", text: "xõa " },
+        { time: "43.869", text: "tóc " },
+        { time: "44.443", text: "ngồi " },
+        { time: "45.017998", text: "bên " },
+        { time: "45.488", text: "rèm" }
+      ],
+      [
+        { time: "49.276", text: "Thầm " },
+        { time: "49.694", text: "ước " },
+        { time: "50.059998", text: "nhưng " },
+        { time: "50.503998", text: "nào " },
+        { time: "51.026", text: "đâu " },
+        { time: "51.575", text: "dám" },
+        { time: "52.097", text: "nói" }
+      ],
+      [
+        { time: "53.325", text: "Khép" },
+        { time: "53.769", text: "\n" },
+        { time: "", text:"\n" }, // This is a blank line
+        { time:"54.37",text:"tâm"},
+        {time:"54.971",text:"tư"},
+        {time:"55.415",text:"lại"},
+        {time:"56.669",text:"Đường"},
+        {time:"57.139",text:"hoa"},
+        {time:"57.766",text:"vẫn"},
+        {time:"57.922",text:"chưa"},
+        {time:"58.471",text:"mở"},
+        {time:"58.940998",text:"lối"}
+      ],
+      [
+          {
+            time:'62.572',
+            text:'Đời'
+          },{
+            time:'63.042',
+            text:'lắm'
+          },{
+            time:'63.408',
+            text:'phong'
+          },{
+            time:'63.8',
+            text:'trần'
+          },{
+            time:'64.34901',
+            text:'tay'
+          },{
+            time:'64.949005',
+            text:'trắng'
+          },{
+            time:'65.289',
+            text:'tay'
+          }
+      ]
+    ];
+
+    // Hiển thị lời bài hát trên màn hình và in đậm các từ tương ứng theo thời gian hiển thị
+    var karaoke = new Karaoke({
+      lyrics,
+      container : document.getElementById("karaoke")
+    });
+  </script>
+</body>
+</html>
